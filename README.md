@@ -1,6 +1,8 @@
 # Rsa::Encrypter
 
-TODO: Write a gem description
+key = Rsa::Encrypter.generate_rsa
+Rsa::Encrypter.encrypt(message, key[1], key[0])
+Rsa::Encrypter.decrypt(message, key[2], key[0])
 
 ## Installation
 
@@ -21,7 +23,7 @@ Or install it yourself as:
 example to use :
 
 
-key = Rsa::Encrypter.generate_rsa
+key = Rsa::Encrypter.generate_rsa // key[1], key[0] for encrypt and  key[2], key[0] for decrypt
 
 puts "your message ?" 
 
