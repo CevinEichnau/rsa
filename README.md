@@ -18,13 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+example to use :
 
-## Contributing
-
-example:
-
-key = generate_rsa
+key = generate_rsa 
 
 puts "your message ?"
 print "=> "; m = gets.chomp
