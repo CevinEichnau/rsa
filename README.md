@@ -21,7 +21,7 @@ Or install it yourself as:
 example to use :
 
 
-key = Rsa::Encrypter.generate_rsa
+key = Rsa::Encrypter.generate_rsa // key[1], key[0] for encrypt and  key[2], key[0] for decrypt
 
 puts "your message ?" 
 
@@ -34,3 +34,4 @@ puts Rsa::Encrypter.decrypt(e, key[2], key[0])
 ## Todo
 
 in the next stpes i build tests and a wiki-documentation
+
