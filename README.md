@@ -1,6 +1,6 @@
 # Rsa::Encrypter
 
-TODO: Write a gem description
+Gem is in development-mode
 
 ## Installation
 
@@ -30,3 +30,7 @@ print "=> "; m = gets.chomp
 e = Rsa::Encrypter.encrypt(m, key[1], key[0])
 
 puts Rsa::Encrypter.decrypt(e, key[2], key[0])
+
+## Todo
+
+in the next stpes i build tests and a wiki-documentation

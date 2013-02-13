@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["cevin@empuxa.com"]
   gem.description   = %q{rsa-encrypter to encrypt messages like password usw}
   gem.summary       = %q{ its a rsa-encrypter they use a private and public key to encrypt and decrypt messages}
-  gem.homepage      = "http://eichnau.com/posts/96"
+  gem.homepage      = "https://github.com/cevin1994/rsa"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
