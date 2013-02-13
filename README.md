@@ -2,6 +2,12 @@
 
 Gem is in development-mode
 
+## Developer
+
+Cevin Eichnau
+
+www.eichnau.com
+
 ## Installation
 
 Add this line to your application's Gemfile:
