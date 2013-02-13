@@ -37,6 +37,30 @@ e = Rsa::Encrypter.encrypt(m, key[1], key[0])
 
 puts Rsa::Encrypter.decrypt(e, key[2], key[0])
 
+## Time
+
+enter your message
+=> ruby
+=> ruby
+|------------------------------------------------------------|
+Time elapsed encrypt 0.8540000000000001 milliseconds
+|------------------------------------------------------------|
+Time elapsed decrypt 2130.5420000000004 milliseconds
+|------------------------------------------------------------|
+Time elapsed all 2131.4030000000002 milliseconds
+|------------------------------------------------------------|
+
+enter your message
+=> i love ruby
+=> i love ruby
+|------------------------------------------------------------|
+Time elapsed encrypt 1.5790000000000002 milliseconds
+|------------------------------------------------------------|
+Time elapsed decrypt 5479.529 milliseconds
+|------------------------------------------------------------|
+Time elapsed all 5481.115 milliseconds
+|------------------------------------------------------------|
+
 ## Todo
 
 in the next stpes i build tests and a wiki-documentation
