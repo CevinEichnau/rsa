@@ -20,11 +20,13 @@ Or install it yourself as:
 
 example to use :
 
-key = generate_rsa 
 
-puts "your message ?"
+key = Rsa::Encrypter.generate_rsa
+
+puts "your message ?" 
+
 print "=> "; m = gets.chomp
 
-e = encrypt(m, key[1], key[0])
+e = Rsa::Encrypter.encrypt(m, key[1], key[0])
 
-puts decrypt(e, key[2], key[0])
+puts Rsa::Encrypter.decrypt(e, key[2], key[0])
