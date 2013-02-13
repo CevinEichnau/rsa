@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Rsa::Encrypter::VERSION
   gem.authors       = ["Cevin Eichnau"]
   gem.email         = ["cevin@empuxa.com"]
-  gem.description   = %q{TODO: rsa-encrypter to encrypt messages like password usw}
-  gem.summary       = %q{TODO: its a rsa-encrypter they use a private and public key to encrypt and decrypt messages}
+  gem.description   = %q{rsa-encrypter to encrypt messages like password usw}
+  gem.summary       = %q{ its a rsa-encrypter they use a private and public key to encrypt and decrypt messages}
   gem.homepage      = "http://eichnau.com/posts/96"
 
   gem.files         = `git ls-files`.split($/)
