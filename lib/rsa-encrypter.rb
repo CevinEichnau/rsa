@@ -2,7 +2,7 @@ require "rsa-encrypter/version"
 
 module Rsa
   module Encrypter
-    def ggt(a, b)
+    def self.ggt(a, b)
 		u=t=1
 		v=s=0
 		while b > 0 do
@@ -14,7 +14,7 @@ module Rsa
 		return u
 	end 
 
-	def prime?(x)
+	def self.prime?(x)
 		if x == 0 or x == 1
 			return false
 		end
@@ -44,7 +44,7 @@ module Rsa
 		return rsa
 	end
 
-	def encrypt(message, e, n)
+	def self.encrypt(message, e, n)
 		byte = []
 		ms = []
 		crypt = []
@@ -68,7 +68,7 @@ module Rsa
 		return crypt
 	end	
 
-	def decrypt(message, d, n)
+	def self.decrypt(message, d, n)
 		m = ""
 		message.each do |c|
 			m += (c**d % n).to_i.chr
