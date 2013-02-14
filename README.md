@@ -18,9 +18,11 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself and require in your ruby file:
 
     $ gem install rsa-encrypter
+    require "rsa-encrypter"
+
 
 ## Usage
 
