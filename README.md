@@ -30,9 +30,9 @@ generate public and private key
 
     key = Rsa::Encrypter.generate_rsa 
 
-or you can set the both prime numbers manualy(both prime numbers must independent), default is 1033, 977 when the both numbers are smaller than is the encrypter faster but less secure
+or you can set the both prime numbers manualy (1-7), default is 7 (secure but slow) when the secure level smaller than is the encrypter faster but less secure
 
-    key = Rsa::Encrypter.generate_rsa(11, 13)    
+    key = Rsa::Encrypter.generate_rsa(2)    
     
 a sample message to encrypting (m)
 
