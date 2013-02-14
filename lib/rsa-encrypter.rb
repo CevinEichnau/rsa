@@ -23,7 +23,7 @@ module Rsa
 		limit = x / i
 		while i < limit
 			if x % i == 0
-				raise "1 of 2 nubers dont prime"
+				raise "#{x} not prime"
 			end
 			i += 1
 			limit = x / i
@@ -31,10 +31,10 @@ module Rsa
 		return x
 	end
 
-	def self.generate_rsa
+	def self.generate_rsa(a=1003, b=977)
 		
-		p = prime?(1033)
-		q = prime?(977)
+		p = prime?(a)
+		q = prime?(b)
 		n = p * q
 		n2 = (p-1)*(q-1)
 		e = (p+q) -1 
