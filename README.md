@@ -26,9 +26,13 @@ Or install it yourself as:
 
 example to use :
 
-generate public and private key
+generate public and private key 
 
     key = Rsa::Encrypter.generate_rsa 
+
+or you can set the both prime numbers manualy, default is 1033, 977 when the both numbers are smaller than is the encrypter faster but lee secure
+
+    key = Rsa::Encrypter.generate_rsa(11, 13)    
     
 a sample message to encrypting (m)
 
