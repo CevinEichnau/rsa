@@ -34,7 +34,7 @@ module Rsa
 	def self.generate_rsa(a=1)
 		secure = [ [11,13], [61,53], [71,76], [163,181], [443,463], [859,769], [1033,977] ]
 		a-=1
-		raise "wrong secure level: #{a}  please use level 1-7" if a < 1 or a > 7
+		raise "wrong secure level: #{a}  please use level 1-7" if a > 7
 		p = prime?(secure[a][0])
 		q = prime?(secure[a][1])
 		n = p * q
