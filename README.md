@@ -18,9 +18,11 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself and require in your ruby file:
 
     $ gem install rsa-encrypter
+    require "rsa-encrypter"
+
 
 ## Usage
 
@@ -29,6 +31,7 @@ example to use :
 generate public and private key 
 
     key = Rsa::Encrypter.generate_rsa 
+
 
 or you can set the both prime numbers manualy (1-6), default is 5 (secure but slow) when the secure level smaller than is the encrypter faster but less secure
 
@@ -59,6 +62,7 @@ decrypted message :
     => ruby
     
 time to need for en/decrypting the message  by secure level 6  
+
 
     |------------------------------------------------------------|
 
