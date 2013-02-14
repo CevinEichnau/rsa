@@ -32,9 +32,9 @@ module Rsa
 	end
 
 	def self.generate_rsa(a=5)
-		secure = [ [11,13], [61,53], [71,76], [163,181], [443,463], [859,769], [1033,977] ]
+		secure = [ [11,13], [61,53], [163,181], [443,463], [859,769], [1033,977] ]
 		a-=1
-		raise "wrong secure level: #{a+1}  please use level 1-7" if a > 6 or a < 0
+		raise "wrong secure level: #{a+1}  please use level 1-6" if a > 5 or a < 0
 		p = prime?(secure[a][0])
 		q = prime?(secure[a][1])
 		n = p * q

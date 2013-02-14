@@ -30,9 +30,9 @@ generate public and private key
 
     key = Rsa::Encrypter.generate_rsa 
 
-or you can set the both prime numbers manualy (1-7), default is 7 (secure but slow) when the secure level smaller than is the encrypter faster but less secure
+or you can set the both prime numbers manualy (1-6), default is 5 (secure but slow) when the secure level smaller than is the encrypter faster but less secure
 
-    key = Rsa::Encrypter.generate_rsa(2)    
+    key = Rsa::Encrypter.generate_rsa(3)    
     
 a sample message to encrypting (m)
 
@@ -58,7 +58,7 @@ decrypted message :
 
     => ruby
     
-time to need for en/decrypting the message    
+time to need for en/decrypting the message  by secure level 6  
 
     |------------------------------------------------------------|
 
