@@ -31,7 +31,7 @@ module Rsa
 		return x
 	end
 
-	def self.generate_rsa(a=1003, b=977)
+	def self.generate_rsa(a=1033, b=977)
 		
 		p = prime?(a)
 		q = prime?(b)
