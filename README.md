@@ -2,6 +2,12 @@
 
 Gem is in development-mode
 
+## Developer
+
+Cevin Eichnau
+
+www.eichnau.com
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,16 +26,49 @@ Or install it yourself as:
 
 example to use :
 
+generate public and private key
 
-key = Rsa::Encrypter.generate_rsa // key[1], key[0] for encrypt and  key[2], key[0] for decrypt
+    key = Rsa::Encrypter.generate_rsa 
+    
+a sample message to encrypting (m)
 
-puts "your message ?" 
+    puts "your message ?" 
 
-print "=> "; m = gets.chomp
+    print "=> "; m = gets.chomp
+    
+e is the encrypted message encrypt needs 3 args 1 = message, 2 = public key (key[1]) and 3 =(key[0]) for calculate with public key     
 
-e = Rsa::Encrypter.encrypt(m, key[1], key[0])
+    e = Rsa::Encrypter.encrypt(m, key[1], key[0])
 
-puts Rsa::Encrypter.decrypt(e, key[2], key[0])
+decrypt needs to 3 args 1:mesage, 2:private key (key[2]) and 3: (key[0]) dor calculate with private key
+
+    puts Rsa::Encrypter.decrypt(e, key[2], key[0])
+
+## Time
+
+enter your message
+
+    => ruby
+    
+decrypted message :
+
+    => ruby
+    
+time to need for en/decrypting the message    
+
+    |------------------------------------------------------------|
+
+    Time elapsed encrypt 0.8540000000000001 milliseconds
+
+    |------------------------------------------------------------|
+
+    Time elapsed decrypt 2130.5420000000004 milliseconds
+
+    |------------------------------------------------------------|
+
+    Time elapsed all 2131.4030000000002 milliseconds
+
+    |------------------------------------------------------------|
 
 ## Todo
 
