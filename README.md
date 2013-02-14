@@ -58,7 +58,7 @@ decrypted message :
 
     => ruby
     
-time to need for en/decrypting the message    
+time to need for en/decrypting the message by secure level 7    
 
     |------------------------------------------------------------|
 
